@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style>
+	body {
+		background-color: tomato; 
+	}
+	form {
+		border: 3px solid #f1f1f1; 
+		height: 100%;
+		width: 30%;
+	}
+	h2 {
+		text-align: center;
+		font-family: serif;
+	}
+	input[type=text],
+	textarea[type="text"], 
+    input[type=password],
+    input[type=email] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #fff; 
+        box-sizing: border-box;
+        border: 1px solid #fff; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        border-color: black;
+    }
+    button { 
+        background-color: #4CAF50; 
+        color: black; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 25%; 
+    } 
+    .message {
+    	max-width: 15px;
+    	max-height: 20px; 
+    }
+    .submitbtn {
+    	background-color: cyan;
+    }
+
+
+</style>
+<body>
+ <form action="/action_page.php">
+    <h2>Contact Us</h2> 
+    <div class="container">
+    	<label for="Firstname"><b>Firstname</b></label>
+    	<input type="text" name="fname" placeholder="Your Firstname" required>
+
+    	<label for="Lastname"><b>Lastname</b></label>
+    	<input type="text" name="lname" placeholder="Your Lastname" required>
+
+    	<label for="password"><b>Password</b></label>
+    	<input type="password" name="psw" placeholder="Your Password" required>
+
+    	<label for="Email"><b>Email</b></label>
+    	<input type="email" name="email" placeholder="Your Email" required>
+
+    	<label for="Message"><b>Message</b></label>
+    	<textarea type="text" name="message"  id="message" placeholder="Write Something.." style="height:200px"required></textarea>
+
+    </div>
+  
+        <div class="container" style="background-color:#f1f1f1"> 
+            <button type="button" class="submitbtn">Sumbit</button> 
+  </form>         
+        </div> 
+
+</body>
+</html>
